@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+.fix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.fleft{
+    float: left;
+}
+.fright{
+    float: right;
+}
+.center{
+    text-align: center;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.main_width{
+    width: 1200px;
+    margin: auto;
+}
+.bg{
+    background: #6777c01a;
+}
+/* start main css */
+
+/* header bar design */
+
+.header_section{
+    background: #fff;
+}
+.logo{
+    width: 25%;
+}
+.logo img {
+    width: 57px;
+    padding: 10px 0;
+}
+.logo span {
+    font-size: 25px;
+    position: relative;
+    top: -29px;
+}
+.menu{
+    width: 65%;
+}
+.menu ul{
+    text-align: center;
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #000;
+    line-height: 54px;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background: #fff;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+}
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.menu_btn{
+    width: 10%;
+}
+.menu_btn a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #6278DF;
+    color: #6278DF;
+    margin-top: 16px;
+}
+
+/* End of header */
+
+/* Start of hero_section */
+
+.hero_section{
+    background: url(https://i.ibb.co/HphGz5z/mbr-4.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 200px;
+    position: relative;
+    z-index: 1;
+}
+.hero_section::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    z-index: -1; 
+
+}
+.hero_text{
+    text-align: center;
+    color: #fff;
+    
+   
+}
+.hero_text h5 {
+    font-size: 27px;
+    margin-bottom: 14px;
+}
+.hero_text h2 {
+    font-size: 57px;
+    margin: 10px 0;
+}
+ .hero_text a {
+    padding: 22px 30px;
+    margin-top: 13px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    color: #6278DF;
+    text-decoration: none;
+    transition: .5s;
+}
+.hero_text a:hover{
+    background: #6278DF;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  /* end of hero section */
+  /* video section start */
+.video_section {
+    padding: 83px 0;
+}
+.video{
+    width: 48%;
+    margin: 30px 0;
+}
+.text{
+    width: 48%;
+}
+.text h2 {
+    font-size: 39px;
+    margin: 35px 0;
+}
+.text p {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+/* end hero */
+/* start service section */
+.service_section{
+    margin-bottom: 80px;
+}
+.text-top{
+    padding-top: 60px;
+}
+.text-top h3{
+   margin: 40px 0;
+   font-size: 45px;
+}
+.text-top p{
+    margin: 0 0 40px 0;
+    font-size: 25px;
+}
+
+.service {
+    width: 31.33%;
+    margin: 1%;
+    padding: 10px 20px;
+    box-shadow: 0 0 35px 5px #ddd;
+}
+.service span {
+    color: darkblue;
+    font-size: 34px;
+}
+.service h3 {
+    display: inline-block;
+    margin: 26px;
+    font-size: 34px;
+}
+.service p{
+    text-align: justify;
+}
+
+/* end of serivce section */
+/* Start Pricing section */
+.pricing_section{
+   padding-bottom: 80px;
+}
+.pricing_table{
+    width: 31.33%;
+    
+    margin: 0 1%;
+    background: #fff;
+}
+.item_top{
+    border-bottom: 1px solid #ddd ;
+    transition: .5s;
+}
+.item_top h4 {
+    padding: 15px;
+    font-size: 24px;
+}
+.item_top h2 {
+    padding: 15px;
+    font-size: 56px;
+}
+.item_top span {
+    font-size: 27px;
+}
+.item_top h3 {
+    padding: 15px;
+}
+.item_top p {
+    padding: 0 6px 10px 15px;
+    font-size: 18px;
+}
+
+.item_buttom {
+padding: 15px;
+}
+.item_buttom ul{
+    list-style: none;
+}
+.item_buttom ul li{
+    padding: 15px 0;
+}
+.default_btn a {
+    padding: 22px 30px;
+    margin-top: 13px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    color: #6278DF;
+    text-decoration: none;
+    transition: .5s;
+    box-shadow:0 0 15px 1px #6278DF;
+}
+/* .default_btn a:hover{
+    background: #6278DF;
+    color: #fff;
+    border-radius: 5px;
+  } */
+
+  .pricing_table:hover .item_top {
+      background: #6278DF;
+      color: #fff;
+  } 
+  .pricing_table:hover .default_btn a {
+    background: #6278DF;
+    color: #fff;
+} 
+/* end of pricing section */
+/* start of team section */
+.team_section{
+    margin-bottom: 60px;
+}
+.team_member{
+    width: 23%;
+    box-shadow: 0 0 15px 1px #6278DF;
+    text-align: center;
+    margin: 1%;
+    border-radius: 5px;
+   
+}
+.over_flue{
+    width: 100%;
+    overflow: hidden;
+}
+.over_flue img{
+    width: 100%;
+   min-height: 100%;
+    transform: scale(1);
+    transition: .5s;  
+}
+.over_flue img:hover{
+    transform: scale(1.2);
+}
+.team_member h3 ,h4{
+    text-align: left;
+    padding: 10px 15px;
+}
+/* end of team section */
+/* start of newsletter section */
+
+.news_letter{
+    padding-bottom: 60px;
+}
+.news_letter input {
+    width: 30%;
+    padding:10px 10px;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: .5px solid #ddd;
+}
+input[type="email"]:focus-visible {
+    outline: 2px solid #6278df;
+    box-shadow: 0 0 25px 6px #6278df;
+    border-radius: 5px;
+}
+
+.news_letter input[type="submit"] {
+    width: 20%;
+    background: #6278DF;
+    color: #fff;
+    transition: .5s;
+}
+.news_letter input[type="submit"]:hover{
+    color: #6278DF;
+    background: #fff;
+    box-shadow: 0 0 15px 1px #6278DF;
+}
+/* <!-- end of newsletter section -->
+<!-- start of blog section --> */
+.blog_section{
+    padding-bottom: 60px;
+}
+.bfity{
+    width: 49%;
+}
+.item_left, .item_right{
+    box-shadow: 0 0 10px #6278DF;
+    border-radius: 5px;
+}
+.Blog_item h3{
+    padding: 30px 10px 10px 10px;
+    font-size: 30px;
+}
+.Blog_item p{
+    padding: 30px 10px 10px 10px;
+    font-size: 24px;
+    line-height: 35px;
+}
+.image {
+    height: 277px;
+}.image img {
+    height: 100%;
+}
