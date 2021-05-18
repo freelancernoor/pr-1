@@ -381,9 +381,9 @@ input[type="email"]:focus-visible {
     padding-bottom: 50px;
 }
 .testmonial_item{
-    width: 31.33%;
+    width: 29.33%;
     background: #fff;
-    margin: 1%;
+    margin: 2%;
     position: relative;
 }
 .testmonial_item span {
